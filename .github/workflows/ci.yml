@@ -46,7 +46,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 12.20.0
+          node-version: 14.x
 
       - name: Yarn package cache
         uses: actions/cache@v2
@@ -66,6 +66,6 @@ jobs:
           # bundle exec rails db:structure:load
           # Se o projeto não usar nenhum dos dois
           bundle exec rails db:migrate
-          
+
       - name: Run tests
         run: bundle exec rspec spec/models
