@@ -37,3 +37,6 @@
 
 # env
 .env
+
+# SimpleCov
+/coverage
