@@ -39,6 +39,9 @@ end
 
 group :development do
   gem 'web-console'
+  gem "rubocop-rails", "~> 2.19", require: false
+  gem "bundle-audit", "~> 0.1.0", require: false
+  gem "rails_best_practices", "~> 1.23", require: false
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -53,3 +56,6 @@ group :test do
   gem 'shoulda-matchers', '~> 5.3'
   gem 'simplecov', '~> 0.22.0', require: false
 end
+
+
+
