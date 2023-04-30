@@ -32,6 +32,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 
 gem 'simple_form', '~> 5.2'
+gem 'devise', '~> 4.9'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
@@ -58,7 +59,4 @@ group :test do
   gem 'shoulda-matchers', '~> 5.3'
   gem 'simplecov', '~> 0.22.0', require: false
 end
-
-
-
 
