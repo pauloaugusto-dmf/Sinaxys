@@ -43,6 +43,9 @@ jobs:
       - name: Install postgres client dependencies
         run: sudo apt-get install libpq-dev
 
+      - name: Precompile assets
+        run: bundle exec rake assets:precompile
+
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
