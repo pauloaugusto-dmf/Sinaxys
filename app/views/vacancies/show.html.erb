@@ -5,9 +5,18 @@
     <div class="d-flex align-items-center overflow-hidden mb-3 rounded", style="width: 350px; height: 250px;">
       <%= image_tag @vacancy["images"][0], class: "img-fluid rounded-start", alt: "" %>
     </div>
-    <div class="text-center">
-      <%= link_to "Me canditatar", "*", class: "btn btn-primary" %>
-    </div>
+    <% if current_user && current_user.candidacy_already_made?(@vacancy["id"]) %>
+      <div class="text-center">
+        <span class="btn btn-success">Candidatura já feita</span>
+      </div>
+    <% else %>
+      <div class="text-center">
+        <form action="/candidacies" method="post">
+          <input type="hidden" name="vacancy_id" value=<%= @vacancy["id"] %>">
+          <button type="submit" class="btn btn-primary">Me canditatar</button>
+        </form>
+      </div>
+    <% end %>
   </div>
 
   <div class="card col-md-8 p-4">

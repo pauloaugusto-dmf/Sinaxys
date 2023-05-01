@@ -27,5 +27,11 @@ class User < ApplicationRecord
          :rememberable,
          :validatable
 
+  has_many :candidacies, dependent: :destroy
+
   validates :name, presence: true
+
+  def candidacy_already_made?(vacancy_id)
+    candidacies.where(vacancy_id: vacancy_id).present?
+  end
 end
