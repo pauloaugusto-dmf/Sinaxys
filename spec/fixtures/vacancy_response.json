@@ -1,0 +1,39 @@
+{
+    "id": 5941,
+    "created_at": "2023-04-28T19:19:36.305-03:00",
+    "title": "Médico: Nefrologia",
+    "description": "Oportunidade: Baixa complexidade, sem urgência e emergência. Perfil do profissional: Especialistas ou residentes que buscam flexibilidade de horários, renda extra e aprimoramento profissional. Potencial de crescimento: A clínica conta com mais de 20 especialidades médicas e realiza em média 5.000 atendimentos por mês proporcionando enorme network profissional",
+    "profession": "Médico",
+    "specialty": "Nefrologia",
+    "occupation_area": "",
+    "value": "R$ 600,00",
+    "value_period": "plantão",
+    "is_temporary": false,
+    "has_guarantee": false,
+    "guarantee": null,
+    "payment_methods": [
+        "A combinar"
+    ],
+    "contact_name": "Vanessa de Carvalho",
+    "contact_phone": "(11) 99631-5539",
+    "contact_email": "financeiropenha90@gmail.com",
+    "is_whatsapp": true,
+    "share_url": "https://sinaxys.com/vagas/5941",
+    "images": [
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/s00ye900j7i6bdmtiz3zst3xqjcv",
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/l35u1muia223x328esu36x3wqwny",
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/j2s2ob2rb55hpf6l27dt1b7cbvoc",
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/t8kx9qf57yzeii6okza15qrhjwed",
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/o9m2ksv0dgv5ysj7l6ay6ty4nl8c",
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/m585w0djfbmu3loye24gp0zsz33l",
+        "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/cj3io19c4edi7uvrka0y5aienf8r"
+    ],
+    "clinic": {
+        "id": 866,
+        "name": "AmorSaúde Penha/SP",
+        "clinic_type": "Clínica ambulatorial",
+        "city": "São Paulo",
+        "state": "SP",
+        "image": "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/s00ye900j7i6bdmtiz3zst3xqjcv"
+    }
+}

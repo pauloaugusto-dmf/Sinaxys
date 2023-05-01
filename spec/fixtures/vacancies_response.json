@@ -1,0 +1,50 @@
+[
+    {
+        "id": 5943,
+        "title": "Médico: Clínica Geral",
+        "profession": "Médico",
+        "specialty": "Clínica Geral",
+        "value": "R$ 18.000,00",
+        "value_period": "mês",
+        "clinic": {
+            "id": 1726,
+            "name": "Bem de Saúde serviços médicos ",
+            "clinic_type": "Policlínica",
+            "city": "Barra do Ribeiro",
+            "state": "RS",
+            "image": "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/1l62jljpincwat4i9e6fd15wakx4"
+        }
+    },
+    {
+        "id": 5942,
+        "title": "Médico: Pneumologia",
+        "profession": "Médico",
+        "specialty": "Pneumologia",
+        "value": "R$ 600,00",
+        "value_period": "turno de 4h",
+        "clinic": {
+            "id": 866,
+            "name": "AmorSaúde Penha/SP",
+            "clinic_type": "Clínica ambulatorial",
+            "city": "São Paulo",
+            "state": "SP",
+            "image": "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/s00ye900j7i6bdmtiz3zst3xqjcv"
+        }
+    },
+    {
+        "id": 5941,
+        "title": "Médico: Nefrologia",
+        "profession": "Médico",
+        "specialty": "Nefrologia",
+        "value": "R$ 600,00",
+        "value_period": "plantão",
+        "clinic": {
+            "id": 866,
+            "name": "AmorSaúde Penha/SP",
+            "clinic_type": "Clínica ambulatorial",
+            "city": "São Paulo",
+            "state": "SP",
+            "image": "https://sinaxys-s3.s3.sa-east-1.amazonaws.com/s00ye900j7i6bdmtiz3zst3xqjcv"
+        }
+    }
+]

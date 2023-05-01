@@ -4,9 +4,15 @@
       <img src="/assets/logo-white.svg" alt="Logo" class="d-inline-block align-text-top">
     </a>
 
-    <div>
-      <%= link_to "Cadastre-se", new_user_registration_path, class: "btn text-light" %>
-      <%= link_to "Acesse sua conta", new_user_session_path, class: "btn btn-outline-light" %>
-    </div>
+    <% unless current_user %>
+      <div>
+        <%= link_to "Cadastre-se", new_user_registration_path, class: "btn text-light" %>
+        <%= link_to "Acesse sua conta", new_user_session_path, class: "btn btn-outline-light" %>
+      </div>
+    <% else %>
+      <div>
+        <span class="btn text-light">Bem vindo: <%= current_user.name %></span>
+      </div>
+    <% end %>
   </div>
 </nav>

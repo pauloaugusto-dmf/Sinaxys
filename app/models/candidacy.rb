@@ -20,5 +20,7 @@
 class Candidacy < ApplicationRecord
   belongs_to :user
 
-  validates :vacancy_id, uniqueness: { scope: :user_id }
+  with_options presence: true do
+    validates :vacancy_id, uniqueness: { scope: :user_id }, numericality: true
+  end
 end

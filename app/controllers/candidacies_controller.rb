@@ -10,10 +10,10 @@ class CandidaciesController < ApplicationController
   def create
     @candidacy = current_user.candidacies.new(canditacy_params)
     if @candidacy.save
-      redirect_back fallback_location: root_path, notice: 'Candidacy was successfully created.'
+      redirect_to root_url, notice: 'Candidacy was successfully created.'
     else
       flash[:alert] = @candidacy.errors.full_messages
-      redirect_back fallback_location: root_path
+      redirect_to root_url
     end
   end
 
