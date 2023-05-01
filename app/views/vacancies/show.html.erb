@@ -1,0 +1,25 @@
+<h1 class="mb-5"><%= @vacancy["title"] %></h1>
+
+<div class="d-flex flex-row">
+  <div class="col-md-4 me-4", style="width: 350px;">
+    <div class="d-flex align-items-center overflow-hidden mb-3 rounded", style="width: 350px; height: 250px;">
+      <%= image_tag @vacancy["images"][0], class: "img-fluid rounded-start", alt: "" %>
+    </div>
+    <div class="text-center">
+      <%= link_to "Me canditatar", "*", class: "btn btn-primary" %>
+    </div>
+  </div>
+
+  <div class="card col-md-8 p-4">
+    <strong>Descriço da vaga</strong>
+    <%= @vacancy["description"] %><br><br>
+
+    <strong>Remuneração</strong>
+    <%= @vacancy["value"] %>/<%= @vacancy["value_period"] %><br><br>
+
+    <strong>Local de trabalho</strong>
+    <%= @vacancy["clinic"]["name"] %><br>
+    <%= @vacancy["clinic"]["city"] %>/<%= @vacancy["clinic"]["state"] %>
+
+  </div>
+</div>

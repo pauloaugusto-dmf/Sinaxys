@@ -24,14 +24,13 @@
                 label_html: { class: 'form-label' },
                 input_html: { autocomplete: "current-password", class: 'form-control form-control-sm' } %>
     </div>
-    
+
   <div class="form-check mb-3">
     <%= f.input :remember_me,
                 input_html: { class: 'form-check-input' },
                 label_html: { class: 'form-check-label' },
                 as: :boolean if devise_mapping.rememberable? %>
   </div>
-    
 
    <div class="text-center mb-3">
     <%= f.button :submit, "Login", class: 'btn btn-primary' %>

@@ -1,12 +1,12 @@
 <nav class="navbar bg-primary-dark">
   <div class="container-fluid px-5 py-2">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="/assets/logo-white.svg" alt="Logo" class="d-inline-block align-text-top">
     </a>
 
     <div>
-      <%= link_to "Cadastre-se", new_registration_path(resource_name), class: "btn text-light" %>
-      <%= link_to "Acesse sua conta", new_session_path(resource_name), class: "btn btn-outline-light" %>
+      <%= link_to "Cadastre-se", new_user_registration_path, class: "btn text-light" %>
+      <%= link_to "Acesse sua conta", new_user_session_path, class: "btn btn-outline-light" %>
     </div>
   </div>
 </nav>
