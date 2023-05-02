@@ -15,12 +15,19 @@ module Users
     end
 
     def candidacies_json
-      @user.candidacies.map do |candidacy|
-        {
-          id: candidacy.id,
-          vacancy: @vacancies_list.find { |vacancy| vacancy['id'] == candidacy.vacancy_id }
-        }
+      candidacies = []
+      @user.candidacies.each do |candidacy|
+        vacancy = @vacancies_list.find { |vacancy| vacancy['id'] == candidacy.vacancy_id }
+        if vacancy.present?
+          candidacies << {
+            id: candidacy.id,
+            vacancy: vacancy
+          }
+        end
       end
+
+      candidacies
     end
+
   end
 end
