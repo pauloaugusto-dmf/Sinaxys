@@ -39,6 +39,7 @@ cp .env.template .env
 docker-compose build
 docker-compose up -d
 docker-compose exec web rails db:setup
+docker-compose exec web bundle exec rake assets:precompile
 ```
 
 ### Open the browser at the address `http://0.0.0.0:3000`
