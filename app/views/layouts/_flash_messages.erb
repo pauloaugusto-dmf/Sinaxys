@@ -1,0 +1,19 @@
+<div class="position-fixed top-15 end-0">
+  <% if notice %>
+    <div class="d-flex justify-content-between alert alert-info alert-dismissible fade show mx-5 my-3" role="alert" data-controller="alert">
+      <div>
+        <%= notice %>
+      </div>
+      <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close" data-action="click->alert#hide"></button>
+    </div>
+  <% end %>
+
+  <% if alert %>
+    <div class="d-flex justify-content-between alert alert-warning alert-dismissible fade show mx-5 my-3" role="alert" data-controller="alert">
+      <div>
+        <%= alert %>
+      </div>
+      <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close" data-action="click->alert#hide"></button>
+    </div>
+  <% end %>
+</div>

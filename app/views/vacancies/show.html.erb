@@ -1,4 +1,4 @@
-<h1 class="mb-5"><%= @vacancy["title"] %></h1>
+<h1 class="mb-5 mt-3"><%= @vacancy["title"] %></h1>
 
 <div class="d-flex flex-row">
   <div class="col-md-4 me-4", style="width: 350px;">
@@ -12,7 +12,7 @@
     <% else %>
       <div class="text-center">
         <form action="/candidacies" method="post">
-          <input type="hidden" name="vacancy_id" value=<%= @vacancy["id"] %>">
+          <input type="hidden" name="vacancy_id" value=<%= @vacancy["id"]%> >
           <button type="submit" class="btn btn-primary">Me canditatar</button>
         </form>
       </div>
