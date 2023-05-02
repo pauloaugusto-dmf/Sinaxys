@@ -1,0 +1,11 @@
+pt-BR:
+  controller:
+    alerts:
+      candidacy_was_successfully_created: Candidacy was successfully created
+    errors:
+      you_must_be_logged_in_to_apply_for_a_job: You must be logged in to apply for a job
+  activerecord:
+    model:
+      candidacy: Candidatura
+      candidacies: Candidaturas
+      

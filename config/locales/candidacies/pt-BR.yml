@@ -1,0 +1,10 @@
+pt-BR:
+  controller:
+    notice:
+      candidacy_was_successfully_created: Candidatura criada com sucesso
+    error:
+      you_must_be_logged_in_to_apply_for_a_job: Você deve estar logado para se candidatar a um emprego
+  activerecord:
+    model:
+      candidacy: Candidacy
+      candidacies: Candidacies
