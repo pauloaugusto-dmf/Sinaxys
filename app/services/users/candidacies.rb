@@ -17,17 +17,16 @@ module Users
     def candidacies_json
       candidacies = []
       @user.candidacies.each do |candidacy|
-        vacancy = @vacancies_list.find { |vacancy| vacancy['id'] == candidacy.vacancy_id }
-        if vacancy.present?
-          candidacies << {
-            id: candidacy.id,
-            vacancy: vacancy
-          }
-        end
+        vacancy = @vacancies_list.find { |v| v['id'] == candidacy.vacancy_id }
+        next if vacancy.blank?
+
+        candidacies << {
+          id: candidacy.id,
+          vacancy: vacancy
+        }
       end
 
       candidacies
     end
-
   end
 end
