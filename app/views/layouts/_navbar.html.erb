@@ -14,7 +14,7 @@
           <form action=<%= destroy_user_session_path %> method="delete">
             <button type="submit" class="btn text-light">Deslogar</button>
           </form>
-          <%= link_to current_user.name, "*", class: "btn btn-outline-light" %>
+          <%= link_to current_user.name, users_show_path, class: "btn btn-outline-light" %>
         </div>
       <% end %>
     <% end %>

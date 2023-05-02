@@ -1,0 +1,43 @@
+<h1 class="mb-5 mt-3">Perfil do Usuário</h1>
+
+<div class="d-flex flex-row">
+  <div class="card col-md-4 me-4 p-4">
+    <form>
+      <fieldset disabled>
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Nome</label>
+          <input type="text" id="disabledTextInput" class="form-control" placeholder=<%= @user.name %>>
+        </div>
+
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Email</label>
+          <input type="email" id="disabledTextInput" class="form-control" placeholder=<%= @user.email %>>
+        </div>
+
+        <div class="mb-3">
+          <label for="disabledTextInput" class="form-label">Experiência profissional</label>
+          <textarea class="form-control" rows="5" placeholder=<%= @user.professional_experience %>></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="card col-md-8 p-4">
+    <% @candidacies.each do |candidacy| %>
+        <div class="card border-secondary mb-3">
+          <div class="d-flex justify-content-between card-header">
+            Candidatura <%= candidacy[:id] %>
+            <%= link_to "ver a vaga", "/vacancies/#{candidacy[:vacancy]["id"]}", class: "" %>
+          </div>
+          <div class="card-body text-secondary">
+            <h5 class="card-title"><%= candidacy[:vacancy]["title"] %></h5>
+            <p class="card-text">
+              <%= candidacy[:vacancy]["clinic"]["name"]%><br>
+              <%= candidacy[:vacancy]["clinic"]["city"] %>/<%= candidacy[:vacancy]["clinic"]["state"] %><br>
+            </p>
+          </div>
+        </div>
+    <% end %>
+
+  </div>
+</div>

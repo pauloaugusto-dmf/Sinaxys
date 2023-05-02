@@ -1,11 +1,7 @@
 # rubocop: disable Rails/I18nLocaleTexts
 
 class CandidaciesController < ApplicationController
-  before_action :require_login, only: [:index, :show, :create]
-
-  def index; end
-
-  def show; end
+  before_action :require_login, only: :create
 
   def create
     @candidacy = current_user.candidacies.new(canditacy_params)
