@@ -26,25 +26,27 @@
                 input_html: { autocomplete: "email", class: 'form-control form-control-sm' }%>
     </div>
 
-    <div class="mb-3">
-    <%= f.input :password,
-                label: "Senha",
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                hint_html: { class: 'form-text'},
-                label_html: { class: 'form-label' },
-                input_html: { autocomplete: "new-password", class: 'form-control form-control-sm'} %>
+    <div class="row">
+      <div class="col mb-3">
+      <%= f.input :password,
+                  label: "Senha",
+                  required: true,
+                  hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                  hint_html: { class: 'form-text'},
+                  label_html: { class: 'form-label' },
+                  input_html: { autocomplete: "new-password", class: 'form-control form-control-sm'} %>
+      </div>
+
+      <div class="col mb-3">
+      <%= f.input :password_confirmation,
+                  label: "Confirme a senha",
+                  required: true,
+                  label_html: { class: 'form-label' },
+                  input_html: { autocomplete: "new-password", class: 'form-control form-control-sm' } %>
+      </div>
     </div>
 
-    <div class="mb-3">
-    <%= f.input :password_confirmation,
-                label: "Confirme a senha",
-                required: true,
-                label_html: { class: 'form-label' },
-                input_html: { autocomplete: "new-password", class: 'form-control form-control-sm' } %>
-    </div>
-
-    <div class="mb-3">
+    <div class="mb-5">
     <%= f.input :professional_experience,
                 label: "Experiência profissional",
                 label_html: { class: 'form-label' },

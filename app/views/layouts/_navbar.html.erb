@@ -1,18 +1,22 @@
-<nav class="navbar bg-primary-dark">
-  <div class="container-fluid px-5 py-2">
+<nav class="navbar bg-primary-dark px-4">
+  <div class="container-fluid mx-5 px-5 py-2">
     <a class="navbar-brand" href="/">
       <img src="/assets/logo-white.svg" alt="Logo" class="d-inline-block align-text-top">
     </a>
-
-    <% unless current_user %>
-      <div>
-        <%= link_to "Cadastre-se", new_user_registration_path, class: "btn text-light" %>
-        <%= link_to "Acesse sua conta", new_user_session_path, class: "btn btn-outline-light" %>
-      </div>
-    <% else %>
-      <div>
-        <span class="btn text-light">Bem vindo: <%= current_user.name %></span>
-      </div>
+    <%- if controller_name != 'sessions' && controller_name != 'registrations' && controller_name != 'passwords' %>
+      <% unless current_user %>
+        <div>
+          <%= link_to "Cadastre-se", new_user_registration_path, class: "btn text-light" %>
+          <%= link_to "Acesse sua conta", new_user_session_path, class: "btn btn-outline-light" %>
+        </div>
+      <% else %>
+        <div class="d-flex">
+          <form action=<%= destroy_user_session_path %> method="delete">
+            <button type="submit" class="btn text-light">Deslogar</button>
+          </form>
+          <%= link_to current_user.name, "*", class: "btn btn-outline-light" %>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </nav>
